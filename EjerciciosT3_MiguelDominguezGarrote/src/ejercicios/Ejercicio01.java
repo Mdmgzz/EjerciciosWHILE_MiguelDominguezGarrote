@@ -11,15 +11,16 @@ public class Ejercicio01 {
 		
 		//creamos el Scanner y preguntamos por el numero 
 		Scanner sc= new Scanner(System.in);
-		System.out.println("Introduzca un numero para sumar: ");
+		System.out.println("Introduzca un numero para sumar: ");		// pedimos al usuario que introduzca un numero
 		num=sc.nextInt();
-		while (num>=0) {
-			suma +=num;
-			System.out.println("El resultado de la suma es: "+suma);
-			System.out.println("Introduzca un numero para sumar: ");
+		while (num>=0) {												// mientras el numero introducido sea positivo el bucle contiunara
+			suma +=num;													// sumamos el numero de la variable num
+			System.out.println("El resultado de la suma es: "+suma);	// mostramos el resultado
+			System.out.println("Introduzca un numero para sumar: ");	// volvemos a preguntar
 			num=sc.nextInt();
 		}
-	sc.close();
+		// cerramos el scanner
+		sc.close();
 	}
 
 }
