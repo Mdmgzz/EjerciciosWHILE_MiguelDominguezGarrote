@@ -32,7 +32,7 @@ public class Ejercicio05 {
 			contador++;
 		}
 		System.out.println("La suma de los numeros positivos es: "+ positivos);
-		System.out.println("La media de los numeros negativos introducidos es: "+ (double) (negativos/contador));
+		System.out.println("La media de los numeros negativos introducidos es: "+  (negativos/contador));
 		System.out.println("Has introducido "+cantidad0+" de ceros");
 	
 		//cerramos el Scanner
