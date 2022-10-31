@@ -19,16 +19,17 @@ public class Ejercicio05 {
 			System.out.println("Introduce el "+contador+"º numero");
 			numero = sc.nextInt();
 			//if (numero)
-			if (numero==0) {
+			if (numero==0) {							// si el numero es un 0 el contador de ceros aumenta
 				cantidad0++;
-			}else if (numero<0){
+			}else if (numero<0){						// si es menos que 0 entonces el contador de negativos aumente
 				contadornegativo++;
-				negativos+= numero;
+				negativos+= numero;						// y se van sumando todos los numeros negativos
 			}else if (numero>0){
-				positivos+=numero;
+				positivos+=numero;						// aqui se van sumando todos los numeros mayores que 0
 			}
 			contador++;
 		}
+		// mostramos la suma de los numeros positivos,la media de los negativos y la cantidad de ceros introducidos
 		System.out.println("La suma de los numeros positivos es: "+ positivos);
 		System.out.println("La media de los numeros negativos introducidos es: "+  ((double)negativos/(double)contadornegativo));
 		System.out.println("Has introducido "+cantidad0+" de ceros");
