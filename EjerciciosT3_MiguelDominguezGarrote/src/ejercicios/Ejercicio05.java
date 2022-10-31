@@ -12,7 +12,6 @@ public class Ejercicio05 {
 		int negativos=0;				// se guarda la suma de los numeros negativos
 		int positivos=0; 				// se guarda la suma de los numeros positivos
 		int contadornegativo=0;			// se guarda los numeros negativos para hacer la media
-		int sumapositivo=0;			// guarda los numeros positivmos para sumarlos 
 		// creamos el scanner y preguntamos al usuario por el primer numero +
 		Scanner sc = new Scanner(System.in);
 		
@@ -24,16 +23,14 @@ public class Ejercicio05 {
 				cantidad0++;
 			}else if (numero<0){
 				contadornegativo++;
-				negativos= numero;
-				negativos += negativos;
+				negativos+= numero;
 			}else if (numero>0){
-				sumapositivo= numero;
-				positivos= positivos + sumapositivo;
+				positivos+=numero;
 			}
 			contador++;
 		}
 		System.out.println("La suma de los numeros positivos es: "+ positivos);
-		System.out.println("La media de los numeros negativos introducidos es: "+  (negativos/contadornegativo));
+		System.out.println("La media de los numeros negativos introducidos es: "+  ((double)negativos/(double)contadornegativo));
 		System.out.println("Has introducido "+cantidad0+" de ceros");
 	
 		//cerramos el Scanner
